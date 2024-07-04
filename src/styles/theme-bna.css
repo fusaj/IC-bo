@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Name: BNA color palette
+    Author: BNA
+    URL: https://gradient.page */
+
+/* CSS: .bg-gradient { background: var(--gradient) } */
+
+@layer base {
+  :root {
+    --gradient: #005f86;
+
+    --primary: 210 100% 26%;
+    --primary-foreground: 210 10% 96.3%;
+
+    --secondary: 210 50% 7.800000000000001%;
+    --secondary-foreground: 210 10% 96.3%;
+
+    --ring: 210 100% 26%;
+  }
+
+  .dark {
+    /* CSS: .bg-gradient { background: var(--gradient) } */
+    --gradient: #005f86;
+
+    --primary: 210 100% 26%;
+    --primary-foreground: 210 10% 96.3%;
+
+    --secondary: 210 50% 7.800000000000001%;
+    --secondary-foreground: 210 10% 96.3%;
+
+    --ring: 210 100% 26%;
+  }
+}
