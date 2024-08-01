@@ -72,14 +72,30 @@ const Layout = () => {
             </nav>
           </aside>
           <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
+            {/* <div className="lg:flex lg:items-center lg:justify-between">
+            <div className="min-w-0 flex-1">
+              <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Back End Developer</h2>
+            </div>
+          </div>   */}
+
             <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
-              <Sheet>
-                <SheetTrigger asChild>
-                  <Button size="icon" variant="outline" className="sm:hidden">
+              {/* <Sheet>
+                <SheetTrigger asChild> */}
+
+              <div className="relative ml-auto flex-1 md:grow-0">
+                <span
+                  className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white"
+                  title="Ahora en React :D"
+                >
+                  Sistema Contable Integral
+                </span>
+              </div>
+
+              {/* <Button size="icon" variant="outline" className="sm:hidden">
                     <PanelLeft className="size-5" />
                     <span className="sr-only">Toggle Menu</span>
-                  </Button>
-                </SheetTrigger>
+                  </Button> */}
+              {/* </SheetTrigger>
                 <SheetContent side="left" className="sm:max-w-xs">
                   <nav className="grid gap-6 text-lg font-medium">
                     <Link
@@ -101,7 +117,7 @@ const Layout = () => {
                     ))}
                   </nav>
                 </SheetContent>
-              </Sheet>
+              </Sheet> */}
               {/* <Breadcrumb className="hidden md:flex">
                 <BreadcrumbList>
                   <BreadcrumbItem>
@@ -122,14 +138,14 @@ const Layout = () => {
                 </BreadcrumbList>
               </Breadcrumb> */}
               <div className="relative ml-auto flex-1 md:grow-0">
-                <Search className="absolute left-2.5 top-2.5 size-4 text-muted-foreground" />
+                {/* <Search className="absolute left-2.5 top-2.5 size-4 text-muted-foreground" />
                 <Input
                   type="search"
                   placeholder="Search..."
                   className="w-full rounded-lg bg-background pl-8 md:w-[200px] lg:w-[320px]"
-                />
+                /> */}
+                <UserNav />
               </div>
-              <UserNav />
             </header>
             <Outlet />
           </div>
