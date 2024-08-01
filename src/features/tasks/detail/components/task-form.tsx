@@ -72,46 +72,46 @@ const TaskForm = (task: TaskType) => {
 
   return (
     <>
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <Card className="w-[350px]">
-          <CardHeader>
-            <CardTitle>Create task</CardTitle>
-            <CardDescription>
-              Deploy your new project in one-click.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <FormField
-              control={form.control}
-              name="title"
-              render={({ field }) => {
-                return (
-                  <FormItem>
-                    <FormLabel>Title</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Insert title..." {...field} />
-                    </FormControl>
-                    <FormDescription>Task title.</FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                );
-              }}
-            />
-          </CardContent>
-          <CardFooter className="flex justify-between">
-            <Button
-              variant="outline"
-              onClick={() => navigate({ to: "/tasks" })}
-            >
-              Cancel
-            </Button>
-            <Button type="submit">Send</Button>
-          </CardFooter>
-        </Card>
-      </form>
-    </Form>
-    <DevTool control={form.control} />
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <Card className="w-[350px]">
+            <CardHeader>
+              <CardTitle>Create task</CardTitle>
+              <CardDescription>
+                Deploy your new project in one-click.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <FormField
+                control={form.control}
+                name="title"
+                render={({ field }) => {
+                  return (
+                    <FormItem>
+                      <FormLabel>Title</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Insert title..." {...field} />
+                      </FormControl>
+                      <FormDescription>Task title.</FormDescription>
+                      <FormMessage />
+                    </FormItem>
+                  );
+                }}
+              />
+            </CardContent>
+            <CardFooter className="flex justify-between">
+              <Button
+                variant="outline"
+                onClick={() => navigate({ to: "/tasks" })}
+              >
+                Cancel
+              </Button>
+              <Button type="submit">Send</Button>
+            </CardFooter>
+          </Card>
+        </form>
+      </Form>
+      <DevTool control={form.control} />
     </>
   );
 };
