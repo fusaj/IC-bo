@@ -22,7 +22,7 @@ const typographyVariants = cva("text-foreground", {
       largeText: "text-lg font-semibold",
       smallText: "text-sm leading-none",
       mutedText: "text-sm text-muted-foreground",
-      mutedText2: "text-base text-muted-foreground",
+      largeMutedText: "text-xl text-muted-foreground ",
     },
     weight: {
       bold: "!font-bold",
@@ -58,7 +58,7 @@ const variantElementMap: Record<
   smallText: "small",
   lead: "p",
   mutedText: "p",
-  mutedText2: "p",
+  largeMutedText: "p",
   ul: "ul",
 };
 

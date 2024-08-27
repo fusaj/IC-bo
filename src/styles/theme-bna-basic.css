@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Name: BNA basic color palette
+    Author: BNA
+    URL: https://colors.muz.li/palette/005F86/275168/65758b/dfe8f1/f1f5f9 */
+
+@layer base {
+  :root {
+    --gradient: #005f86;
+
+    /* Primary colors for <Button /> */
+    --primary: 197 100% 26%;
+    --primary-foreground: 210 10% 96%;
+
+    /* Used for warning actions such as <Button variant="warning"> */
+    --warning: 38 92% 50%; /* f59f0a */
+    --warning-foreground: 48 96% 89%; /* fef3c8 */
+
+    /* Used for destructive actions such as <Button variant="destructive"> */
+    --destructive: 0 84% 60%; /* color red: ef4343 */
+    --destructive-foreground: 0 0% 100%; /* white */
+
+    /* Used for focus ring */
+    --ring: 197 100% 26%; /* color 01: #005F86 */
+    /* Border radius for card, input and buttons */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --gradient: #005f86;
+
+    /* Primary colors for <Button /> */
+    --primary: 197 100% 26%;
+    --primary-foreground: 210 10% 96%;
+
+    --secondary: 210 50% 8%;
+    --secondary-foreground: 210 10% 96%;
+
+    /* Used for warning actions such as <Button variant="warning"> */
+    --warning: 38 92% 50%; /* f59f0a */
+    --warning-foreground: 48 96% 89%; /* fef3c8 */
+
+    /* Used for destructive actions such as <Button variant="destructive"> */
+    --destructive: 0 84% 60%; /* color red: ef4343 */
+    --destructive-foreground: 0 0% 100%; /* white */
+
+    /* Used for focus ring */
+    --ring: 197 100% 26%; /* color 01: #005F86 */
+    /* Border radius for card, input and buttons */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* FONTS */
+@layer base {
+  /* @font-face {
+    font-family: "Expert-Sans-Regular";
+    src:
+      local("expertsans-regular-webfont"),
+      url("../../../assets/fonts/expertsans-regular-webfont.ttf")
+        format("truetype");
+  } */
+
+  /* @font-face {
+    font-family: "Expert-Sans-Light";
+    src:
+      local("expertsans-light-webfont"),
+      url("../../../assets/fonts/expertsans-light-webfont.ttf")
+        format("truetype");
+  } */
+}

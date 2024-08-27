@@ -1,0 +1,10 @@
+{
+  "Modulos": [
+    {
+      "id": "modulo-task",
+      "Url": "http://localhost:5000/api/v1",
+      "Enabled": true,
+      "DisabledActions": []
+    }
+  ]
+}
